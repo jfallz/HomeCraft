@@ -6,6 +6,6 @@ I made this because I realized you can't set a default new-tab page easily on Ed
 ## Installation
 1. `git clone https://github.com/jfallz/HomeCraft.git`
 2. Open up Edge, and go to `edge://extensions`.
-3. Click "Load unpacked", and select the `extension` folder.
+3. Click "Load unpacked", and select the `extension` folder within your cloned repository.
 
 You're done!
