@@ -9,8 +9,20 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     });
   
+    preset.addEventListener("change", function() {
+        var url = "http://www.";
+        var e = document.getElementById("preset");
+        e = e.options[e.selectedIndex].text;
+
+        url = url + e + ".com";
+
+        document.getElementById("homepageInput").value = url;
+    })
     saveButton.addEventListener("click", function() {
       var newTabHomepage = homepageInput.value;
+      if (newTabHomepage === "") {
+        newTabHomepage = "http://google.com"
+      }
   
       // Store the new tab homepage URL
       chrome.storage.sync.set({ "newTabHomepage": newTabHomepage }, function() {

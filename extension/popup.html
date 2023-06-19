@@ -5,7 +5,14 @@
     <script src="popup.js"></script>
   </head>
   <body>
-    <p>Enter a new home URL. Leave blank for default.</p>
+    <p>Enter a new home URL. Disable extension to return to defaults.</p>
+    <label for="preset">Presets:</label>
+    <select name="preset" id="preset">
+    <option value="empty"></option>
+    <option value="ddg">DuckDuckGo</option>
+    <option value="google">Google</option>
+    <option value="bing">Bing</option>
+    </select>
     <input type="text" id="homepageInput" placeholder="http://">
     <button id="saveButton">Save</button>
   </body>
