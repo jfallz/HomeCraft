@@ -1,0 +1,20 @@
+{
+    "name": "HomeCraft",
+    "description": "Finally, the most basic feature is now available on Edge.",
+    "manifest_version": 3,
+    "version": "1.0",
+    "permissions": [
+        "tabs",
+        "storage"
+      ],
+      "background": {
+        "service_worker": "background.js"
+      },
+      "action": {
+        "default_popup": "popup.html",
+        "default_icon": "icon-32.png"
+      },
+      "icons": {
+        "32": "icon-32.png"
+      }
+}
