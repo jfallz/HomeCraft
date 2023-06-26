@@ -17,7 +17,7 @@ chrome.storage.sync.get("newTabHomepage", function(result) {
   function setNewTabBehavior(newTabHomepage) {
     // Update the new tab behavior to open the specified URL
     chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
-      if (changeInfo.status === "loading" && tab.url === "edge://newtab/") {
+      if (tab.url === "edge://newtab/") {
         chrome.tabs.update(tabId, { url: newTabHomepage });
       }
     });
